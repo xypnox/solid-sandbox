@@ -1,0 +1,30 @@
+.App {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  margin: auto;
+  color: var(--text-color);
+}
+
+.App hr {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.App h1 {
+  font-size: 2rem;
+}
+
+.App h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0 0.25rem;
+  color: var(--heading-color);
+}
+
+
+.App p {
+  font-size: 1rem;
+  color: var(--paragraph-color);
+}
+
