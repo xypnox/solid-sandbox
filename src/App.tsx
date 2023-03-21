@@ -176,13 +176,14 @@ const App: Component = () => {
   return (
     <div>
       <style>{styles}</style>
-      <button onClick={() => setIsBroken(!isBroken())}>Toggle</button>
       <br />
       <p> Toggle Mode</p>
       <select value={mode()} onChange={(e: any) => setMode(e.target.value)}>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
       </select>
+      <hr />
+      <button onClick={() => setIsBroken(!isBroken())}>Toggle Version</button>
       <h1>Version: {isBroken() ? 'Broken but with happy path in code' : 'Clunky version'}</h1>
       {isBroken() ? <BrokenApp /> : <ClunkyApp />}
     </div>
